@@ -42,28 +42,11 @@
 
       <xrextras-faceanchor>
 
-        <a-entity gltf-model="#head-occluder" position="0 0 0.02" xrextras-hider-material></a-entity>
- 
-          <a-entity gltf-model="#glasses" class="cantap" scale="5 5 5" position="0 .2 1" animation-mixer="clip: rotb; loop: repeat">
-            <a-plane 
-              position="0.25 -0.01 0"
-              height="0.25" 
-              width="0.4" 
-              side="back" 
-              depth-write="false"
-              color="#7611B6"
-              opacity="0.5"
-              roughness="0.25"
-            ></a-plane>
-            <a-plane 
-              position="-0.25 -0.01 0"
-              height="0.25" width="0.4" 
-              side="back" 
-              depth-write="false"
-              color="#FFC828"
-              opacity="0.5"
-              roughness="0.25"
-            ></a-plane>
+        <a-entity gltf-model="#head-occluder" position="0 0 0.2" xrextras-hider-material  scale="1.2 1.1 1.35" 
+      rotation="-6 0 0"></a-entity>
+         <xrextras-face-mesh xrextras-hider-material></xrextras-face-mesh>
+       
+          <a-entity gltf-model="#glasses" class="cantap" scale="5 5 5" position="0 1 5" animation-mixer="clip: rotb; loop: repeat">     
           </a-entity>
        
 
