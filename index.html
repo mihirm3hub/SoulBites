@@ -8,7 +8,7 @@
     <!-- Copyright (c) 2021 8th Wall, Inc. -->
     <!-- head.html is optional; elements will be added to your html head before app.js is loaded. -->
     <!-- Use "8thwall:" meta tags to hook into 8th Wall's build process and developer tools. -->
-     <script src="//cdn.8thwall.com/web/aframe/8frame-0.9.0.min.js"></script>
+     <script src="//cdn.8thwall.com/web/aframe/8frame-1.1.0.min.js"></script>
      <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
      <script src="//cdn.8thwall.com/web/aframe/aframe-extras-6.1.1.min.js"></script>
 
@@ -31,7 +31,7 @@
 
       <a-assets>
         <a-asset-item id="head-occluder" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Fhead-occluder.glb"></a-asset-item>
-        <a-asset-item id="glasses" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Fbanana.glb"></a-asset-item>
+        <a-asset-item id="glasses" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Funtitled.glb"></a-asset-item>
       </a-assets>
 
       <xrextras-resource id="alpha" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Fsoft-eyes-mouth-qdi5sah8in.png"> </xrextras-resource>
@@ -44,7 +44,7 @@
 
         <a-entity gltf-model="#head-occluder" position="0 0 0.02" xrextras-hider-material></a-entity>
  
-          <a-entity gltf-model="#glasses" class="cantap" scale=".05 .05 .05" position="0 2 1" animation-mixer="clip: CubeAction; loop: repeat">
+          <a-entity gltf-model="#glasses" class="cantap" scale="5 5 5" position="0 .2 1" animation-mixer="clip: rotb; loop: repeat">
             <a-plane 
               position="0.25 -0.01 0"
               height="0.25" 
