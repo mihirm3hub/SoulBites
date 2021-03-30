@@ -10,6 +10,7 @@
     <!-- Use "8thwall:" meta tags to hook into 8th Wall's build process and developer tools. -->
      <script src="//cdn.8thwall.com/web/aframe/8frame-0.9.0.min.js"></script>
       <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
+     <script src="//cdn.8thwall.com/web/aframe/aframe-extras-4.2.0.min.js"></script>
 
   <!-- 8thWall Web - Replace the app key here with your own app key -->
   <script src="//apps.8thwall.com/xrweb?appKey=jh4bpv6DoDMifX53rHGDN72sYgL6ngVU2IUw2i0JfXWB48Qnai8aNYZXm2XSvxtdjAtxR5"></script>
@@ -45,7 +46,7 @@
         <xrextras-face-mesh material-resource="#tattoo"></xrextras-face-mesh>
 
         <xrextras-face-attachment point="forehead">
-          <a-entity gltf-model="#glasses" scale=".05 .05 .05" position="0 1 0">
+          <a-entity gltf-model="#glasses" class="cantap" scale=".05 .05 .05" position="0 1 0" animation-mixer="clip: CubeAction; loop: repeat">
             <a-plane 
               position="0.25 -0.01 0"
               height="0.25" 
