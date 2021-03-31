@@ -33,6 +33,7 @@
   <a-assets>
     <a-asset-item id="pirate-hat" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Funtitled.glb"></a-asset-item>
     <a-asset-item id="head-occluder" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Fhead-occluder.glb"></a-asset-item>
+    <a-asset-item id="b-fall" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Funtitled1.glb"></a-asset-item>
   </a-assets>
   
   <xrextras-capture-button></xrextras-capture-button>
@@ -51,6 +52,10 @@
   <xrextras-capture-preview></xrextras-capture-preview>
   
   <a-camera look-controls="enabled: false" wasd-controls="enabled: false" position="0 1.6 0"></a-camera>
+  
+  <a-entity 
+      gltf-model="#b-fall"  animation-mixer="clip: rotb; loop: repeat; crossFadeDuration: 0.4" position="0 0.2 0.2" scale="5 5 5" rotation="-10 0 0">
+    </a-entity>
   
   <xrextras-faceanchor>
     
