@@ -19,19 +19,15 @@
   
   <body>
     
-    <div
-  style="position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;"
->
-  <button id="opengooglebutton">
-    open google
-  </button>
-</div>
-    
-    <script type="text/javascript">
-      $("#eye-model").on("click", function() {
-      window.location.href="viewer.html"
-      }
-    </script>
+   <!-- "button" -->
+    <a-entity id="refresh-button" geometry="primitive: box" material="color: red" position="0 0 -2"></a-entity>
+
+
+<script>
+    document.querySelector('#refresh-button').addEventListener('click', function() {
+       window.location.href="/viewer.html"
+    });
+</script>
        
     <a-scene
       next-button
@@ -90,7 +86,7 @@
 
         <!-- falling banana -->      
         <a-entity 
-          gltf-model="#bn-fall"  animation-mixer="clip: fallb; crossFadeDuration: 0.4"  scale=".5 .5 .5" position="0 -4 -1">
+          gltf-model="#bn-fall"  animation-mixer="clip: fallb; crossFadeDuration: 0.4"  scale=".5 .5 .5" position="0 -1 -1">
         </a-entity>
 
       </xrextras-faceanchor>
