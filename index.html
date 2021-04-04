@@ -72,9 +72,13 @@
 </div>
     
   <script>
-   var openTimeoutPopup =new TimeoutPopup('#popUpmain', 3);
-   openTimeoutPopup.init();
+  window.onload = function() {
+  var modal = document.getElementById('popUPmain');
 
+  setTimeout(function() {
+    modal.style.display = 'block';
+  }, 13000);
+}
   </script>
     
     <a-scene
