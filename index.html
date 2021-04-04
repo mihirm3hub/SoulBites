@@ -18,12 +18,7 @@
     
     <script>src="/script.js"</script>
     
-    <script>
-    $(document).ready(function(){
-       setTimeout(function(){
-         $('#popUpmain').css('display','block');},5000);
-    });
-    </script>
+    
     
   <!--   <script> AFRAME.registerComponent("action-on-click", {
     schema: {
@@ -75,6 +70,12 @@
       </div>
   <img id="icon" src="./assets/not-tracking.svg">
 </div>
+    
+  <script>
+   var openTimeoutPopup =new TimeoutPopup('#popUpmain', 3);
+   openTimeoutPopup.init();
+
+  </script>
     
     <a-scene
       physics="driver: ammo"
