@@ -16,12 +16,35 @@
     
     <script>script.js</script>
     
+     <script> AFRAME.registerComponent("action-on-click", {
+    schema: {
+      action: {
+        default: "navigate"
+      },
+      url: {
+        default: ""
+      }
+    },
+    init: function() {
+      var data = this.data;
+      var el = this.el;
+      el.addEventListener("click", () => {
+          // Send email or navigate to url
+          window.open(
+              data.action === 'mail' ? 
+              'mailto:orangegrove_1955@hotmail.com' :
+              data.url
+          );
+      });
+    }
+  });
+  </script>
+    
   </head>
   
   <body>
       
     <a-scene
-      next-button
       physics="driver: ammo"
       xrextras-almost-there
       xrextras-loading
@@ -77,15 +100,22 @@
       <a-light type="directional" target="#face" position="0 1.8 3" intensity="0.8"></a-light>
       <a-light type="ambient" intensity="0.5"></a-light>
       </a-scene>
-    <a-scene>
-      
+    
+    next-button
     <a-entity 
-          gltf-model="#bn-fall"  animation-mixer="clip: fallb; crossFadeDuration: 0.4"  scale=".2 .2 .2" position="0 0 -3" delay="99999999">
+          gltf-model="#bn-fall"  
+         
+          scale=".2 .2 .2" position="0 0 -3" delay="99999999" 
+          action-on-click="url: https://proe.co.in/" class="cantap">
         </a-entity>
       
        <a-light type="directional" target="#face" position="0 1.8 3" intensity="0.8"></a-light>
       <a-light type="ambient" intensity="0.5"></a-light>
-    </a-scene>
-        
+    
+    <div id="nextbutton" style="display: none; z-index: 10">
+      
+      <h2>Next Animation</h2>
+    
+    </div>  
   </body>
 </html>
