@@ -33,12 +33,3 @@ h2 {
   text-align: center;
   font-family: monospace;
 }
-
-#popUpmain
-{
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  background:rgba(255,255,255,0.6);
-  z-index: 10;
-}
