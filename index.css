@@ -1,17 +1,11 @@
-#nextbutton {
-  width: 50vw;
-  height: auto;
-  position: absolute;
-  bottom: 10vh;
-  left: 25vw;
-  background-color: #AD50FF;
-  border: 0.2em solid white;
-  text-align: center;
-  color: #FFF;
-  border-radius: 100px;
+#popUpMain
+{
+  position: fixed;
+  width 100%;
+  heaight: 100%;
+  background:rgba(255,255,255,0.6);
+  z-index:1001;
 }
 
-#nextbutton:active {
-  background-color: white;
-  color: #AD50FF;
-}
+
+
