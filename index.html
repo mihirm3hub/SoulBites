@@ -14,9 +14,18 @@
     <!-- 8thWall Web - Replace the app key here with your own app key -->
     <script src="//apps.8thwall.com/xrweb?appKey=jh4bpv6DoDMifX53rHGDN72sYgL6ngVU2IUw2i0JfXWB48Qnai8aNYZXm2XSvxtdjAtxR5"></script>
     
-    <script>script.js</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
-     <script> AFRAME.registerComponent("action-on-click", {
+    <script>src="/script.js"</script>
+    
+    <script>
+    $(document).ready(function(){
+       setTimeout(function(){
+         $('#popUpmain').css('display','block');},5000);
+    });
+    </script>
+    
+  <!--   <script> AFRAME.registerComponent("action-on-click", {
     schema: {
       action: {
         default: "navigate"
@@ -38,12 +47,13 @@
       });
     }
   });
-  </script>
+  </script> -->
     
   </head>
   
   <body>
     <div id="popUPmain" style="
+  display: none;
   z-index: 10;
   width: 100%;
   height:100%;
@@ -54,9 +64,11 @@
           height:250px;
           background-color:#FFA500;
           position: absolute;
-                            top: 50%;
-                            left:50%;
-                            transform: translate(-50%,-50%);">
+          top: 50%;
+          left:50%;
+          transform: translate(-50%,-50%);
+          box-shadow: 1px 2px 5px 3px black;
+          text-align:center;">
        <h1 id="newHeading">
          Subscribe
        </h1>
