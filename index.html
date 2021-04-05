@@ -14,11 +14,8 @@
     <!-- 8thWall Web - Replace the app key here with your own app key -->
     <script src="//apps.8thwall.com/xrweb?appKey=jh4bpv6DoDMifX53rHGDN72sYgL6ngVU2IUw2i0JfXWB48Qnai8aNYZXm2XSvxtdjAtxR5"></script>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
     <script>src="/script.js"</script>
-    
-    
     
   <!--   <script> AFRAME.registerComponent("action-on-click", {
     schema: {
@@ -55,25 +52,29 @@
           position: absolute;
           background:rgba(255,255,255,0.6)">
        <div id="popup" style="
-            width: 500px;
-            height:250px;
+            width: 1000px;
+            height:400px;
             background-color:#FFA500;
             position: absolute;
             top: 50%;
             left:50%;
+            padding: 70px 0;
             transform: translate(-50%,-50%);
             box-shadow: 1px 2px 5px 3px black;
-            text-align:center;">
-           <h1 id="newHeading">
+            text-align: center;">
+           <h1 id="newHeading" style="
+             font-size: 40px;">
              50% of the food is wasted
            </h1>
            <h1 id="change" style="
-             display: none;">
+             display: none;
+             font-size: 40px;">
              You can make a change and become a banana saviour!
          </h1>
          <button id="button"
                  onclick="myFunction()"
                  style="
+                 align: center;
                  border: none;
                  outline: 0;
                  padding: 12px;
@@ -81,33 +82,33 @@
                  background-color: #000;
                  text-align: center;
                  cursor: pointer;
-                 width: 100%;
-                 font-size: 18px;">     
+                 width: 80%;
+                 font-size: 20px;">     
            Discover How</button>
         </div>
   
 </div>
     
   <script>
-  window.onload = function() {
-  var modal1 = document.getElementById('popUPmain');
-  var modal2 = document.getElementById('change');
-    
-  setTimeout(function() {
-    modal1.style.display = 'block';
-  }, 6000);
-    
-  setTimeout(function() {
-    modal2.style.display = 'block';
-  }, 10000);
-}
-  
-  document.getElementById("popUPmain").onclick = function() {
-  document.getElementById("popUPmain").style.display = "none";
-}
-   function myFunction() {
-  window.open("https://box-viewer.glitch.me");
-} 
+     window.onload = function() {
+     var modal1 = document.getElementById('popUPmain');
+     var modal2 = document.getElementById('change');
+
+              setTimeout(function() {
+                modal1.style.display = 'block';
+              }, 6000);
+
+              setTimeout(function() {
+                modal2.style.display = 'block';
+              }, 10000);
+            }
+
+           document.getElementById("popUPmain").onclick = function() {
+           document.getElementById("popUPmain").style.display = "none";
+        }
+      function myFunction() {
+      window.open("https://box-viewer.glitch.me");
+    } 
   </script>
   
     
@@ -148,19 +149,19 @@
       </xrextras-faceanchor>
       
     </a-scene>
+    
+    
        <a-scene>
+        <!-- falling banana --> 
        <a-entity 
           gltf-model="#bn-fall"  
           animation-mixer="clip: fallb; crossFadeDuration: 0.4"  
           scale=".5 .5 .5" position="0 0.5 -5" 
-        >
-        </a-entity>
-        
-        
+        ></a-entity>
+              
       <a-light type="directional" target="#face" position="0 1.8 3" intensity="0.8"></a-light>
       <a-light type="ambient" intensity="0.5"></a-light>
-         
-      
+               
       </a-scene>
       
   </body>
