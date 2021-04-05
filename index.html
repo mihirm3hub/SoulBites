@@ -65,23 +65,29 @@
             box-shadow: 1px 2px 5px 3px black;
             text-align:center;">
            <h1 id="newHeading">
-             Subscribe
+             50% of the food is wasted
            </h1>
+           <h1 id="change" style="
+             display: none;">
+             You can make a change
+         </h1>
         </div>
   <img id="icon" src="./assets/not-tracking.svg">
 </div>
     
   <script>
   window.onload = function() {
-  var modal = document.getElementById('popUPmain');
-
+  var modal1 = document.getElementById('popUPmain');
+  var modal2 = document.getElementById('change');
+    
   setTimeout(function() {
-    modal.style.display = 'block';
-  }, 3000);
+    modal1.style.display = 'block';
+  }, 6000);
+    
+  setTimeout(function() {
+    modal2.style.display = 'block';
+  }, 10000);
 }
-  setTimeout(function() {
-    modal.close()
-  }, 5000);  
   
   document.getElementById("popUPmain").onclick = function() {
   document.getElementById("popUPmain").style.display = "none";
