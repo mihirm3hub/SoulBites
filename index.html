@@ -134,27 +134,37 @@
 
       <a-camera look-controls="enabled: false" wasd-controls="enabled: false" position="0 1.6 0"></a-camera>
 
-      <xrextras-faceanchor>    
-        <!--
-          Prevents the rendering of models behind head. This must be in the scene
-          before any other models you want to occlude.       
-        -->
-        <a-entity 
-          gltf-model="#head-occluder"
-          xrextras-hider-material
-          position="0 0 1" 
-          scale="1.2 1.1 1.35" 
-          rotation="-6 0 0">
-        </a-entity>
-
-        <!-- face occluder -->
-        <xrextras-face-mesh xrextras-hider-material></xrextras-face-mesh>
-       
-        <a-entity 
-      gltf-model="#pirate-hat" position="0 0.55 0.2" scale="1.2 1.35 1.35" rotation="-10 0 0">
-    </a-entity>
-                
-      </xrextras-faceanchor>
+        <xrextras-faceanchor>
+    
+    <a-entity gltf-model="#head-occluder" position="0 0 0.02" xrextras-hider-material></a-entity>
+    
+    <xrextras-face-mesh material-resource="#tattoo"></xrextras-face-mesh>
+    
+    <xrextras-face-attachment point="forehead">
+      <a-entity gltf-model="#pirate-hat" scale="8 8 8" position="0 0.05 0">
+        <a-plane 
+          position="0.25 -0.01 0"
+          height="0.25" 
+          width="0.4" 
+          side="back" 
+          depth-write="false"
+          color="#7611B6"
+          opacity="0.5"
+          roughness="0.25"
+        ></a-plane>
+        <a-plane 
+          position="-0.25 -0.01 0"
+          height="0.25" width="0.4" 
+          side="back" 
+          depth-write="false"
+          color="#FFC828"
+          opacity="0.5"
+          roughness="0.25"
+        ></a-plane>
+      </a-entity>
+    </xrextras-face-attachment>
+    
+  </xrextras-faceanchor>
       
     </a-scene>
     
