@@ -9,8 +9,8 @@
      <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
      <script src="//cdn.8thwall.com/web/aframe/aframe-extras-6.1.1.min.js"></script>
      
-    
-    
+     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://use.typekit.net/mml1wjt.css">
     <!-- 8thWall Web - Replace the app key here with your own app key -->
     <script src="//apps.8thwall.com/xrweb?appKey=jh4bpv6DoDMifX53rHGDN72sYgL6ngVU2IUw2i0JfXWB48Qnai8aNYZXm2XSvxtdjAtxR5"></script>
     
@@ -58,18 +58,21 @@
             position: absolute;
             top: 50%;
             left:50%;
-            padding: 70px 0;
+            padding: 0px 0;
             transform: translate(-50%,-50%);
             box-shadow: 1px 2px 5px 3px black;
-            text-align: center;">
+            text-align: center;
+            font-family: 'Kanit', sans-serif;
+            color: black;
+            overflow:hidden;">
            <h1 id="newHeading" style="
-             font-size: 40px;">
-             50% of the food is wasted
+             font-size: 60px;">
+             50% of the FOOD IS WASTED
            </h1>
            <h1 id="change" style="
              display: none;
-             font-size: 40px;">
-             You can make a change and become a banana saviour!
+             font-size: 60px;">
+             MAKE A CHANGE & BECOME A BANANA SAVIOUR!
          </h1>
          <button id="button"
                  onclick="myFunction()"
@@ -100,7 +103,7 @@
 
               setTimeout(function() {
                 modal2.style.display = 'block';
-              }, 10000);
+              }, 8000);
             }
 
            document.getElementById("popUPmain").onclick = function() {
