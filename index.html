@@ -71,7 +71,9 @@
              display: none;">
              You can make a change and become a banana saviour!
          </h1>
-         <button style="
+         <button id="button"
+                 onclick="myFunction()"
+                 style="
                  border: none;
                  outline: 0;
                  padding: 12px;
@@ -80,10 +82,8 @@
                  text-align: center;
                  cursor: pointer;
                  width: 100%;
-                 font-size: 18px;">
-           <img id="icon" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Fsoft-eyes-mouth-qdi5sah8in.png?v=1617083935107" 
-                                       height="10px" width="10px">
-           claim ur prize</button>
+                 font-size: 18px;">     
+           Discover How</button>
         </div>
   
 </div>
@@ -105,8 +105,13 @@
   document.getElementById("popUPmain").onclick = function() {
   document.getElementById("popUPmain").style.display = "none";
 }
-    
+   function myFunction() {
+  window.open("https://box-viewer.glitch.me");
+} 
   </script>
+  
+    
+    
     
     <a-scene
       physics="driver: ammo"
@@ -115,38 +120,13 @@
       xrextras-runtime-error
       xrextras-pause-on-hidden
       xrface="mirroredDisplay: true; cameraDirection: front; allowedDevices: any">
-
       <!-- Assets block loading of the scene until they are fetched. -->
       <a-assets>
         <a-asset-item id="bn-fall" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2F3banana.glb"></a-asset-item>
         <a-asset-item id="head-occluder" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Fhead-occluder.glb"></a-asset-item>
-         <video
-        id="dino-video"
-        muted
-        crossorigin="anonymous"
-        loop="true"
-        src="https://cdn.glitch.com/3f5d6828-531a-46fb-ad85-3752685169f0%2Fdinocam.mp4">
-      </video>
       </a-assets>
 
-      <xrextras-capture-button></xrextras-capture-button>
-
-      <xrextras-capture-config
-        watermark-image-url="./assets/Images/8logo.png"
-        watermark-max-width="100"
-        watermark-max-height="10"
-
-        cover-image-url="./assets/Images/pirate-hat.jpg"
-        end-card-call-to-action="Wear the hat:"
-        short-link="8th.io/pirate"
-        footer-image-url="./assets/Images/pirate.svg"
-      ></xrextras-capture-config>
-
-      <xrextras-capture-preview></xrextras-capture-preview>
-
       <a-camera look-controls="enabled: false" wasd-controls="enabled: false" position="0 1.6 0"></a-camera>
-
-
 
       <xrextras-faceanchor>    
         <!--
@@ -164,8 +144,7 @@
         <!-- face occluder -->
         <xrextras-face-mesh xrextras-hider-material></xrextras-face-mesh>
 
-        <!-- falling banana -->      
-        
+                
       </xrextras-faceanchor>
       
     </a-scene>
