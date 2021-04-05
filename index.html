@@ -77,8 +77,12 @@
 
   setTimeout(function() {
     modal.style.display = 'block';
-  }, 13000);
+  }, 3000);
 }
+  setTimeout(function() {
+    modal.close()
+  }, 5000);  
+  
   document.getElementById("popUPmain").onclick = function() {
   document.getElementById("popUPmain").style.display = "none";
 }
