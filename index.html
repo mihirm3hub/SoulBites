@@ -73,7 +73,7 @@
              display: none;
              font-size: 60px;
              line-height: 60px;">
-             MAKE A CHANGE & BECOME A BANANA SAVIOUR!
+             Yaay! You are awarded a wreath congratulations.
          </h1>
          <button id="button"
                  onclick="myFunction()"
@@ -88,7 +88,7 @@
                  cursor: pointer;
                  width: 80%;
                  font-size: 20px;">     
-           Discover How</button>
+           Claim your prize</button>
         </div>
   
 </div>
@@ -128,28 +128,10 @@
       <!-- Assets block loading of the scene until they are fetched. -->
       <a-assets>
         <a-asset-item id="bn-fall" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2F3banana.glb"></a-asset-item>
-        <a-asset-item id="head-occluder" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Fhead-occluder.glb"></a-asset-item>
-        <a-asset-item id="pirate-hat" src="https://cdn.glitch.com/f19363a1-0ba6-4ae4-89b2-4e408e764325%2Fbwreath.glb"></a-asset-item>
       </a-assets>
 
-      <a-camera look-controls="enabled: false" wasd-controls="enabled: false" position="0 1.6 0"></a-camera>
-
-        <xrextras-faceanchor>
-    
-    <a-entity gltf-model="#head-occluder" position="0 0 0" scale="10 10 10" rotation="10 180 0" xrextras-hider-material></a-entity>
-    
-    <xrextras-face-mesh material-resource="#tattoo"></xrextras-face-mesh>
-    
-    
-      <a-entity gltf-model="#pirate-hat" scale="10 9 10" position="0 0.2 1" rotation="30 180 0">
-      </a-entity>
-   
-    
-  </xrextras-faceanchor>
-      
-    </a-scene>
-    
-    
+      <a-camera look-controls="enabled: false" wasd-controls="enabled: false" position="0 1.6 0"></a-camera>      
+    </a-scene>    
        <a-scene>
         <!-- falling banana --> 
        <a-entity 
