@@ -84,12 +84,13 @@
              padding:5px;
              display: none;
              font-size: 40px;
-             line-height: 40px;">
+             line-height: 60px;">
              Yaay! You are awarded a wreath congratulations.
-         </h1>
-         <button id="button"
+             <button id="button"
                  onclick="myFunction()"
                  style="
+                 margin:0px;
+                 padding:5px;
                  align: center;
                  border: none;
                  outline: 0;
@@ -101,6 +102,8 @@
                  width: 100%;
                  font-size: 20px;">     
            Claim your prize</button>
+         </h1>
+         
         </div>
   
 </div>
@@ -109,7 +112,6 @@
      window.onload = function() {
      var modal1 = document.getElementById('popUPmain');
      var modal2 = document.getElementById('change');
-     var modal3 = document.getElementById('button');
 
               setTimeout(function() {
                 modal1.style.display = 'block';
@@ -120,15 +122,15 @@
               }, 8000);
        
               setTimeout(function() {
-                modal3.style.display = 'block';
-              }, 8000);
+                window.open("https://soulbites-wreath.glitch.me","_self");
+              }, 15000);
             }
 
            document.getElementById("popUPmain").onclick = function() {
            document.getElementById("popUPmain").style.display = "none";
         }
       function myFunction() {
-      window.open("https://soulbites-wreath.glitch.me");
+      window.open("https://soulbites-wreath.glitch.me","_self");
     } 
   </script>
       
