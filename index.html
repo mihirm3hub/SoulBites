@@ -66,20 +66,25 @@
             color: #FFE400;
             overflow:hidden;">
            <h3 id="newHeading" style="
+             margin:20px;
+             padding:5px;
              font-size: 60px;
              line-height: 60px;">
              50% of the FOOD IS WASTED
            </h3>
-         <h2 id="newHeading2" style="
-             top: 100%;
+         <h2 id="newHeading2" style="                        
+             margin:10px;
+             padding:5px;
              font-size: 60px;
              line-height: 60px;">
              YOU CAN MAKE A CHANGE AND GET REWARDED
            </h2>
            <h1 id="change" style="
+             margin:10px;
+             padding:5px;
              display: none;
-             font-size: 60px;
-             line-height: 60px;">
+             font-size: 40px;
+             line-height: 40px;">
              Yaay! You are awarded a wreath congratulations.
          </h1>
          <button id="button"
@@ -93,7 +98,7 @@
                  background-color: #000;
                  text-align: center;
                  cursor: pointer;
-                 width: 80%;
+                 width: 100%;
                  font-size: 20px;">     
            Claim your prize</button>
         </div>
@@ -104,6 +109,7 @@
      window.onload = function() {
      var modal1 = document.getElementById('popUPmain');
      var modal2 = document.getElementById('change');
+     var modal3 = document.getElementById('button');
 
               setTimeout(function() {
                 modal1.style.display = 'block';
@@ -111,6 +117,10 @@
 
               setTimeout(function() {
                 modal2.style.display = 'block';
+              }, 8000);
+       
+              setTimeout(function() {
+                modal3.style.display = 'block';
               }, 8000);
             }
 
@@ -121,10 +131,7 @@
       window.open("https://soulbites-wreath.glitch.me");
     } 
   </script>
-  
-    
-    
-    
+      
     <a-scene
       physics="driver: ammo"
       xrextras-almost-there
