@@ -37,16 +37,17 @@ h1 {
   font-size: 40px;
   line-height: 30px;
   position: absolute;
-  top: 22%;
-  align: center;
+  top: 25%;
+  left:3%;
 }
 
 #newHeading2 {
   margin: 5px;
   padding: 5px;
   font-size: 40px;
-  line-height: 20px;
-  top: 30%;
+  line-height: 30px;
+  top: 35%;
+  left:3%;
   position: absolute;
 }
 
@@ -54,9 +55,10 @@ h1 {
   position: absolute;
   margin: 5px;
   padding: 5px;
-  font-size: 30px;
+  font-size: 40px;
   line-height: 20px;
-  top: 40%;
+  top: 45%;
+  left:3%;
 }
 
 h3 {
@@ -65,11 +67,12 @@ h3 {
   display: none;
   font-size: 30px;
   line-height: 30px;
-  top: 50%;
+  top: 55%;
   position: absolute;
 }
 
 #button {
+  z-index:12;
   margin: 0px;
   padding: 5px;
   align: center;
@@ -77,12 +80,11 @@ h3 {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #0001;
-  left: 100%;
+  background-color: #000;
   text-align: center;
-  cursor: pointer;
+  right: 3%;
   width: 100%;
   font-size: 20px;
-  top: 60%;
+  top: 100%;
   position: absolute;
 }
