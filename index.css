@@ -81,9 +81,9 @@ h3 {
   background-color: rgba(0, 0, 0, 0);;
   text-align: center;
   right: 1%;
-  left: -1;
+  left: -1%;
   width: 100%;
-  font-size: 20px;
+  font-size: 25px;
   top: 100%;
   position: absolute;
 }
