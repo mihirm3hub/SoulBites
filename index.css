@@ -25,41 +25,48 @@ body {
   padding: 10px 0;
   transform: translate(-50%, -50%);
   box-shadow: 1px 2px 5px 3px black;
-  text-align: justify;
+  text-align: center;
   font-family: "Kanit", sans-serif;
-  color: #FFE400;
+  color: white;
   overflow: hidden;
 }
 
 h1 {
-  z-index: 12;
   margin: 10px;
   padding: 5px;
-  font-size: 60px;
-  line-height: 60px;
-  position: 0 0 0 0;
+  font-size: 40px;
+  line-height: 30px;
+  position: absolute;
+  top: 22%;
+  align: center;
 }
 
 #newHeading2 {
   margin: 5px;
   padding: 5px;
-  font-size: 50px;
-  line-height: 40px;
+  font-size: 40px;
+  line-height: 20px;
+  top: 30%;
+  position: absolute;
 }
 
 #newHeading3 {
+  position: absolute;
   margin: 5px;
   padding: 5px;
-  font-size: 50px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 20px;
+  top: 40%;
 }
 
 h3 {
   margin: 5px;
   padding: 5px;
   display: none;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 30px;
+  line-height: 30px;
+  top: 50%;
+  position: absolute;
 }
 
 #button {
@@ -76,4 +83,6 @@ h3 {
   cursor: pointer;
   width: 100%;
   font-size: 20px;
+  top: 60%;
+  position: absolute;
 }
