@@ -1,16 +1,12 @@
 # SoulBites Web AR Ad
 
-Code written in Glitch. Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+Code written in Glitch.
 
 **Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
 
-Find out more [about Glitch](https://glitch.com/about).
-
 ## Your Project
 
-The project SoulBites Web AR ads was proposed by Aline Simonetti Universidad de Valencia. The project represents SoulBites Ad campaign to save bananas by converting them into delicious protein bars. Their campaign also focuses on reducing food wastage
-as well as their packaging is designed to be a decomposable devoid of plastic. Their sustainable product design needed an Augmented Reality Ad which will elaborate their idealogy to the viewers. This project show cases 3D model of bananas falling,
-following which a banana wreath (face filter AR) is awarded to user ending the ad with the show case of their product and campaign message.
+The project SoulBites Web AR ads was proposed by Aline Simonetti (Universidad de Valencia). The project represents SoulBites Ad campaign POC to save bananas which are discarded owing to the discoloration/ shelf standards based on the looks by converting them into delicious protein bars. Their campaign also focuses on reducing food wastage as well as their packaging is designed to be a decomposable which is devoid of plastic. The sustainable product design needed an Augmented Reality campaign elaborates their idealogy to the viewers. This project show cases 3D model of bananas falling, following which a banana wreath (face filter AR) is awarded to user ending the experience with the show case of their product and campaign message.
 
 ### ← README.md
 
@@ -34,4 +30,4 @@ Drag in `assets`, like images or music, to add them to your project
 
 ## Made by [Mihir Mainkar]()
 
-\ ゜ o ゜)ノ
+\( ゜o ゜)ノ
